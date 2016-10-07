@@ -1,10 +1,9 @@
 "use strict";
 
-function Mazespace(){
-	this.north = false;
-	this.east = false;
-	this.south = false;
-	this.west = false;
+function Mazespace(directions){
+	for(var i=0;i<directions.length;i++){
+		this[directions[i]] = false;
+	}
 }
 
 Mazespace.prototype.setWall = function(direction){
