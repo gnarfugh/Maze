@@ -1,11 +1,12 @@
 "use strict";
 
-function Mazespace(directions){
-	for(var i=0;i<directions.length;i++){
-		this[directions[i]] = false;
-	}
+function MazeSpace(directions) {
+    var i;
+    for (i=0; i < directions.length; i += 1) {
+        this[directions[i]] = false;
+    }
 }
 
-Mazespace.prototype.setWall = function(direction){
-	this[direction] = true;
+MazeSpace.prototype.setWall = function(direction) {
+    this[direction] = true;
 }
