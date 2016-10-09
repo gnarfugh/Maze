@@ -173,7 +173,7 @@ RobotMazeInterface.prototype.renderControls = function () {
       };
   }
   if(typeof interface.robot.exitMaze == 'function') {   
-    buttons["Exit Maze"] = function () {    
+    buttons["Solve Maze"] = function () {    
         if (interface.robot.maze == interface.maze) {
           (function callExitMaze(){
               setTimeout(function() {
